@@ -23,7 +23,6 @@
             <h2>Aviso de Privacidad</h2>
             <p>La información proporcionada será utilizada para gestionar tu pedido...</p>
         </section>
-        <!-- Agrega esto debajo del aviso de privacidad -->
         <section>
             <h2>Detalles del Reporte</h2>
             <form action="#" method="POST">
@@ -43,6 +42,31 @@
                 </p>
             </form>
         </section>
+        <fieldset>
+            <legend>¿Qué elementos están afectados o solicitados?:</legend>
+            <p>
+                <input type="checkbox" id="afectaRamo" name="afectados" value="ramo">
+                <label for="afectaRamo">Ramo principal o centro de mesa</label>
+            </p>
+            <p>
+                <input type="checkbox" id="afectaTarjeta" name="afectados" value="tarjeta">
+                <label for="afectaTarjeta">Tarjeta o dedicatoria</label>
+            </p>
+        </fieldset>
+
+        <p>
+            <label for="descripcion">Descripción detallada:</label><br>
+            <textarea id="descripcion" name="descripcion" rows="4" cols="40" placeholder="Ej: El ramo de rosas llegó sin la tarjeta..." required></textarea>
+        </p>
+
+        <p>
+            <label for="evidencia">Adjuntar fotografía (Obligatorio):</label><br>
+            <input type="file" id="evidencia" name="evidencia" accept="image/*" required>
+        </p>
+
+        <p>
+            <button type="submit">Registrar Reporte</button>
+        </p>
     </main>
 </body>
 </html>
