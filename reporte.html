@@ -7,11 +7,41 @@
 <body>
     <header>
         <h1>Floristería El Jardín Encantado</h1>
+        <nav>
+            <ul>
+                <a href="index.html">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="productos.html">Productos</a>
+                <a href="detalles.html">Detalles</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="reporte.html">Reportar Novedad</a>
+            </ul>
     </header>
     <main>
         <section>
             <h2>Aviso de Privacidad</h2>
             <p>La información proporcionada será utilizada para gestionar tu pedido...</p>
+        </section>
+        <!-- Agrega esto debajo del aviso de privacidad -->
+        <section>
+            <h2>Detalles del Reporte</h2>
+            <form action="#" method="POST">
+                
+                <p>
+                    <label for="nombreCompleto">Nombre del Cliente:</label><br>
+                    <input type="text" id="nombreCompleto" name="nombreCompleto" placeholder="Escriba su nombre completo" required />
+                </p>
+
+                <p>
+                    <label for="tipoNovedad">Motivo de contacto:</label><br>
+                    <select id="tipoNovedad" name="tipoNovedad" required>
+                        <option value="">Seleccione una categoría...</option>
+                        <option value="pedido">Consulta sobre un pedido</option>
+                        <option value="danio">Reportar flores dañadas</option>
+                    </select>
+                </p>
+            </form>
         </section>
     </main>
 </body>
